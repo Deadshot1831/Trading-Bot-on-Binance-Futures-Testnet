@@ -33,7 +33,7 @@ logs/                # bot.log (runtime), committed sample order logs
 - [x] `cli.py` entry point
 - [x] `test_bot.py` self-check (runs offline, no keys needed)
 - [x] README.md + requirements.txt + .gitignore
-- [ ] Place one MARKET + one LIMIT order on testnet (needs user's API keys) and
+- [x] Place one MARKET + one LIMIT order on testnet (needs user's API keys) and
       commit the resulting log files
 
 ## Bonus chosen

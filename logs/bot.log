@@ -19,3 +19,27 @@
 2026-07-15 17:28:16,567 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '120000', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1784116696567}
 2026-07-15 17:28:17,025 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 401 {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
 2026-07-15 17:28:17,026 ERROR    bot.client: API ERROR POST /fapi/v1/order: HTTP 401 / code -2015: Invalid API-key, IP, or permissions for action
+2026-07-15 17:35:16,038 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002'}
+2026-07-15 17:35:16,038 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002', 'recvWindow': 5000, 'timestamp': 1784117116038}
+2026-07-15 17:35:16,583 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 401 {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-15 17:35:16,583 ERROR    bot.client: API ERROR POST /fapi/v1/order: HTTP 401 / code -2015: Invalid API-key, IP, or permissions for action
+2026-07-15 17:35:16,689 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC'}
+2026-07-15 17:35:16,689 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1784117116689}
+2026-07-15 17:35:17,281 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 401 {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-15 17:35:17,282 ERROR    bot.client: API ERROR POST /fapi/v1/order: HTTP 401 / code -2015: Invalid API-key, IP, or permissions for action
+2026-07-15 17:40:25,250 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002'}
+2026-07-15 17:40:25,250 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002', 'recvWindow': 5000, 'timestamp': 1784117425250}
+2026-07-15 17:40:25,833 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 401 {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-15 17:40:25,834 ERROR    bot.client: API ERROR POST /fapi/v1/order: HTTP 401 / code -2015: Invalid API-key, IP, or permissions for action
+2026-07-15 17:40:25,950 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC'}
+2026-07-15 17:40:25,950 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1784117425950}
+2026-07-15 17:40:26,522 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 401 {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+2026-07-15 17:40:26,522 ERROR    bot.client: API ERROR POST /fapi/v1/order: HTTP 401 / code -2015: Invalid API-key, IP, or permissions for action
+2026-07-15 17:45:20,405 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002'}
+2026-07-15 17:45:20,406 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.002', 'recvWindow': 5000, 'timestamp': 1784117720406}
+2026-07-15 17:45:20,887 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 200 {"orderId":21893613475,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"V9q8B0NNjyxU872m2HWcmL","price":"0.00","origQty":"0.0020","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1784117720958}
+2026-07-15 17:45:20,888 INFO     bot.orders: Order accepted: orderId=21893613475 status=NEW executedQty=0.0000 avgPrice=None
+2026-07-15 17:45:21,004 INFO     bot.orders: Placing order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC'}
+2026-07-15 17:45:21,004 INFO     bot.client: REQUEST POST /fapi/v1/order {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.002', 'price': '66600', 'timeInForce': 'GTC', 'recvWindow': 5000, 'timestamp': 1784117721004}
+2026-07-15 17:45:21,469 INFO     bot.client: RESPONSE POST /fapi/v1/order -> 200 {"orderId":21893613487,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"Yf0W7ATqukrKAevWq4CNzs","price":"66600.00","origQty":"0.0020","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1784117721540}
+2026-07-15 17:45:21,469 INFO     bot.orders: Order accepted: orderId=21893613487 status=NEW executedQty=0.0000 avgPrice=None
