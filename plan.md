@@ -29,10 +29,10 @@ logs/                # bot.log (runtime), committed sample order logs
 
 ## Tasks
 - [x] plan.md (this file)
-- [ ] `bot/` package: client, orders, validators, logging_config
-- [ ] `cli.py` entry point
-- [ ] `test_bot.py` self-check (runs offline, no keys needed)
-- [ ] README.md + requirements.txt + .gitignore
+- [x] `bot/` package: client, orders, validators, logging_config
+- [x] `cli.py` entry point
+- [x] `test_bot.py` self-check (runs offline, no keys needed)
+- [x] README.md + requirements.txt + .gitignore
 - [ ] Place one MARKET + one LIMIT order on testnet (needs user's API keys) and
       commit the resulting log files
 
