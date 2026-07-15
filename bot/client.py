@@ -66,4 +66,5 @@ class FuturesClient:
         raise error
 
     def place_order(self, **params):
-        return self._signed_request("POST", "/fapi/v1/order", params)
+        path = "/fapi/v1/algoOrder" if "algoType" in params else "/fapi/v1/order"
+        return self._signed_request("POST", path, params)

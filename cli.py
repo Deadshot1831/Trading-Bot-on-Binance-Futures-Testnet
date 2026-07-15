@@ -21,8 +21,8 @@ from bot.orders import build_order, place_order
 log = logging.getLogger("cli")
 
 RESPONSE_FIELDS = (
-    "orderId", "symbol", "side", "type", "status",
-    "origQty", "executedQty", "avgPrice", "price", "stopPrice",
+    "orderId", "algoId", "symbol", "side", "type", "status", "algoStatus",
+    "origQty", "quantity", "executedQty", "avgPrice", "price", "stopPrice", "triggerPrice",
 )
 
 

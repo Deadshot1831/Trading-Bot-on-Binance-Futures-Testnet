@@ -30,7 +30,8 @@ p = build_order("BTCUSDT", "SELL", "LIMIT", "0.002", price="120000")
 assert p["price"] == "120000" and p["timeInForce"] == "GTC"
 
 p = build_order("BTCUSDT", "SELL", "STOP", "0.002", price="95000", stop_price="96000")
-assert p["stopPrice"] == "96000" and p["price"] == "95000"
+assert p["triggerPrice"] == "96000" and p["price"] == "95000"
+assert p["algoType"] == "CONDITIONAL"  # STOP orders route to /fapi/v1/algoOrder
 
 # --- invalid orders ---
 assert rejects(symbol="BTCUSDT", side="SELL", order_type="LIMIT", quantity="1")  # no price

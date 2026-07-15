@@ -29,7 +29,10 @@ def build_order(symbol, side, order_type, quantity, price=None, stop_price=None)
     params["timeInForce"] = "GTC"
 
     if order_type == "STOP":
-        params["stopPrice"] = format(validators.positive_decimal(stop_price, "stop-price"), "f")
+        # Since 2025-12-09 conditional orders go to the Algo Order endpoint,
+        # which takes triggerPrice + algoType=CONDITIONAL (error -4120 otherwise).
+        params["triggerPrice"] = format(validators.positive_decimal(stop_price, "stop-price"), "f")
+        params["algoType"] = "CONDITIONAL"
     elif stop_price is not None:
         raise ValueError("stop-price is only valid for STOP orders")
     return params

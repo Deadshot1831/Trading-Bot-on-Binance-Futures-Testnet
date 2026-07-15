@@ -66,8 +66,11 @@ python test_bot.py   # validates signing + input validation offline
 - **Testnet only** — base URL is hard-coded to `https://testnet.binancefuture.com`.
 - Credentials come from environment variables (never from files or CLI args, so they
   can't leak into shell history or the repo).
-- `STOP` is Binance's stop-limit type on USDT-M futures (`stopPrice` triggers a limit
-  order at `price`); `timeInForce` is fixed to GTC for LIMIT/STOP orders.
+- `STOP` is Binance's stop-limit type on USDT-M futures (`--stop-price` triggers a limit
+  order at `--price`); `timeInForce` is fixed to GTC for LIMIT/STOP orders. Since
+  Binance's 2025-12-09 API migration, STOP orders are sent to the Algo Order endpoint
+  (`/fapi/v1/algoOrder`, `algoType=CONDITIONAL`, `triggerPrice`) and return an
+  `algoId`/`algoStatus` instead of `orderId`/`status`.
 - Quantity/price precision is validated by the exchange (per-symbol filters like
   `LOT_SIZE`/`PRICE_FILTER` are enforced server-side and reported back as clear errors).
 - If you see error `-1021` (timestamp outside recvWindow), sync your system clock.
