@@ -43,10 +43,10 @@ export BINANCE_API_SECRET="your_testnet_secret"
 python cli.py BTCUSDT BUY MARKET 0.002
 
 # LIMIT order (price required)
-python cli.py BTCUSDT SELL LIMIT 0.002 --price 120000
+python cli.py BTCUSDT SELL LIMIT 0.002 --price 66600
 
 # STOP-LIMIT order (bonus): triggers a limit order when stop-price is hit
-python cli.py BTCUSDT SELL STOP 0.002 --price 95000 --stop-price 96000
+python cli.py BTCUSDT SELL STOP 0.002 --price 63000 --stop-price 63500
 ```
 
 The CLI prints the order request summary, then the response details

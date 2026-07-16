@@ -4,8 +4,8 @@
 Examples:
   export BINANCE_API_KEY=... BINANCE_API_SECRET=...
   python cli.py BTCUSDT BUY MARKET 0.002
-  python cli.py BTCUSDT SELL LIMIT 0.002 --price 120000
-  python cli.py BTCUSDT SELL STOP 0.002 --price 95000 --stop-price 96000
+  python cli.py BTCUSDT SELL LIMIT 0.002 --price 66600
+  python cli.py BTCUSDT SELL STOP 0.002 --price 63000 --stop-price 63500
 """
 import argparse
 import logging
